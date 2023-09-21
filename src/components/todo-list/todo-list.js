@@ -12,7 +12,7 @@ const TodoList = ({ todoList, changeItem }) => {
       <li
         className={classNames}
         key={id}
-        id="item-id"
+        id="to-do-item"
         onClick={(e) => changeItem(e, id)}
       >
         <TodoListItem

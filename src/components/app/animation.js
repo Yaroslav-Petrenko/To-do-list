@@ -16,17 +16,16 @@ function makeEaseOut(timing) {
 
 let bounceEaseOut = makeEaseOut(bounce);
 
-
 function animate(options) {
-  var start = performance.now();
+  let start = performance.now();
 
   requestAnimationFrame(function animate(time) {
     // timeFraction от 0 до 1
-    var timeFraction = (time - start) / options.duration;
+    let timeFraction = (time - start) / options.duration;
     if (timeFraction > 1) timeFraction = 1;
 
     // текущее состояние анимации
-    var progress = options.timing(timeFraction);
+    const progress = options.timing(timeFraction);
 
     options.draw(progress);
 
@@ -35,15 +34,4 @@ function animate(options) {
     }
   });
 }
-
-// brick.onclick = function () {
-//   animate({
-//     duration: 3000,
-//     timing: bounceEaseOut,
-//     draw: function (progress) {
-//       brick.style.left = progress * 500 + 'px';
-//     },
-//   });
-// };
-
 export { animate, bounceEaseOut };

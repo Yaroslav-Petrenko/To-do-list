@@ -10,32 +10,8 @@
   padding: 0 15px;
   cursor: default;
   overflow: hidden;
-	/* transition: all 5s; */
-	/* animation: myAnimation 2s infinite ease-in-out; */
-
+	user-select: none;
 }
-.ul-list:last-child{
-	/* margin-bottom: -5px; */
-}
-
-/* @keyframes myAnimation{
-0%{
-    opacity: 1;
-    transform: rotateX(90deg);
-}
-50%{
-    opacity: 0.5;
-    transform: rotateX(0deg);
-}
-100%{
-    display: none;
-    opacity: 0;
-    transform: rotateX(90deg);
-}
-} */
-
-
-
 
 .ul-list {
 	list-style: none;
@@ -43,50 +19,32 @@
 }
 
 .important {
-	/* text-decoration: line-through; */
 	font-weight: bold;
-	
 }
 
 .complete {
-	/* font-weight: bold; */
 	text-decoration: line-through;
 }
 
-/* .ul-list li:before {
-	content: "\f12a"
-} */
-
 .fa-times {
-	/* display: none; */
-	
 	font-size: 25px;
 	position: absolute;
-	 right: -20px;
+	right: -20px;
 	bottom: 9px; 
 	color: rgb(206, 206, 206)
 }
 
-/* .li .fa-times:hover {
-	right: 30px;
-} */
-
 li:hover .fa-times {
 	right: 9px;
 	cursor: pointer;
-	/* box-shadow:  2px 2px 2px rgba(0,0,0,0.2); */
-	/* color: rgb(155, 155, 155) */
 }
 
 li:hover .fa-exclamation {
-	right: 33px;
+	right: 35px;
 	cursor: pointer;
-	
-	/* box-shadow:  2px 2px 2px rgba(0,0,0,0.2); */
-	/* color: rgb(155, 155, 155) */
 }
 
-#item-id:hover {
+#to-do-item:hover {
 	box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
 	cursor: pointer;
 	right: 3px;

@@ -19,9 +19,8 @@ const HeaderInput = ({ addItem }) => {
           className="form-control"
           placeholder="Todo's name"
           aria-label="Recipient's username"
-          aria-describedby="button-addon2"
         ></input>
-        <button className="button-add-todo" type="submit" id="button-addon2">
+        <button className="button-add-todo" type="submit" >
           <i className="fas fa-plus-square"></i>
         </button>
       </div>
